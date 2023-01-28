@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./js/script.js" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Tzeezotje</title>
+  </head>
+  <body>    
+		<div class="wrapper">
+    <div class="header__hero-bg">
+      <header id="header" class="header">
+        <div class="container header__container">
+          <a href="#">
+            <img class="header__logo" src="./img/logo.png" alt="#" />
+          </a>
+					<!-- ////////////////////////// -->
+					<div class="menu__burger">
+						<ul class="menu">
+							
+							<li><a class="menuItem" href="#">À la carte</a></li>
+							<li><a class="menuItem" href="#">Wijnkaart</a></li>
+							<li><a class="menuItem" href="#">Lunchmenu</a></li>
+							<li><a class="menuItem" href="#">Contact</a></li>
+		
+						</ul>
+						<button class="hamburger">
+							<i class="menuIcon material-icons"><svg class="burger-svg" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></i>
+							<i class="closeIcon material-icons"><svg class="close-svg" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/></svg></i>
+						</button>
+					</div>
+					<!-- /////////////////////////// -->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__list-item">
+                <a class="header__item-link" href="#">À la carte</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__item-link" href="#">Wijnkaart</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__item-link" href="#">Lunchmenu</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__item-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <svg
+              class="header__phone-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                stroke="#D3B47F"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5"
+                stroke="#D3B47F"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 9C22 5.13 18.87 2 15 2"
+                stroke="#D3B47F"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <a class="header__phone-number" href="tel:+3292825725">
+              +32 9 282 57 25
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__content">
+              <p class="hero__schedule">OPEN EVERYDAY 6AM - 9PM</p>
+              <h1 class="hero__title">
+                A bad day with lunch is better than a&nbsp;good day without it.
+              </h1>
+              <div class="hero__buttons">
+                <a class="hero__reserve-link popup-link" href="#popup"
+                  ><span>Reserve a table</span></a
+                >
+                <ul class="social__list">
+                  <li class="social__list-item">
+                  <a href="#">
+                	 <svg
+	                      class="social-svg"
+	                      width="48"
+	                      height="48"
+	                      viewBox="0 0 48 48"
+	                      fill="none"
+	                      xmlns="http://www.w3.org/2000/svg"
+	                    >
+	                      <circle cx="24" cy="24" r="23.5" stroke="white" />
+	                      <path
+	                        d="M14.4399 30H16.6799V25.28H20.2479V23.504H16.6799V20.64H21.3359V18.832H14.4399V30ZM25.1643 22.432V18.16H22.9243V30H25.1643V28.736C25.7083 29.504 26.7003 30.144 28.0923 30.144C30.3643 30.144 32.1403 28.304 32.1403 25.536C32.1403 22.768 30.3643 20.992 28.0923 20.992C26.7483 20.992 25.7083 21.616 25.1643 22.432ZM29.8523 25.536C29.8523 27.216 28.7163 28.176 27.5003 28.176C26.3003 28.176 25.1643 27.248 25.1643 25.568C25.1643 23.888 26.3003 22.96 27.5003 22.96C28.7163 22.96 29.8523 23.856 29.8523 25.536Z"
+	                        fill="white"
+	                      />
+	                  </svg>
+             	    </a>
+                  </li>
+                  <li class="social__list-item">
+                   <a href="#">
+                   	 <svg
+	                      class="social-svg"
+	                      width="48"
+	                      height="48"
+	                      viewBox="0 0 48 48"
+	                      fill="none"
+	                      xmlns="http://www.w3.org/2000/svg"
+	                    >
+	                      <circle cx="24" cy="24" r="23.5" stroke="white" />
+	                      <path
+	                        d="M16.4556 30H18.6956V18.832H16.4556V30ZM20.3327 25.536C20.3327 28.304 22.1247 30.144 24.3807 30.144C25.7727 30.144 26.7807 29.456 27.3087 28.688V30.064C27.3087 31.712 26.3487 32.416 25.1167 32.416C23.9967 32.416 23.1647 31.888 22.9407 31.088H20.7167C20.9407 33.12 22.6847 34.368 25.1807 34.368C28.0927 34.368 29.5647 32.464 29.5647 30.064V21.136H27.3087V22.4C26.7807 21.632 25.7727 20.992 24.3807 20.992C22.1247 20.992 20.3327 22.768 20.3327 25.536ZM27.3087 25.568C27.3087 27.248 26.1887 28.176 24.9567 28.176C23.7567 28.176 22.6207 27.216 22.6207 25.536C22.6207 23.856 23.7567 22.96 24.9567 22.96C26.1887 22.96 27.3087 23.888 27.3087 25.568Z"
+	                        fill="white"
+	                      />
+	                    </svg>
+                   </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                    	<svg
+	                      class="social-svg"
+	                      width="48"
+	                      height="48"
+	                      viewBox="0 0 48 48"
+	                      fill="none"
+	                      xmlns="http://www.w3.org/2000/svg"
+	                    >
+	                      <circle cx="24" cy="24" r="23.5" stroke="white" />
+	                      <path
+	                        d="M12.6448 20.64H15.6208V30H17.8608V20.64H20.8368V18.832H12.6448V20.64ZM24.0872 30H26.5192L28.1352 23.808L29.7512 30H32.1672L34.7592 21.136H32.6152L31.0472 27.872L29.3832 21.136H27.0152L25.3192 27.888L23.7512 21.136H21.4792L24.0872 30Z"
+	                        fill="white"
+	                      />
+	                    </svg>
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                    	<svg
+	                      class="social-svg"
+	                      width="48"
+	                      height="48"
+	                      viewBox="0 0 48 48"
+	                      fill="none"
+	                      xmlns="http://www.w3.org/2000/svg"
+	                    >
+	                      <circle cx="24" cy="24" r="23.5" stroke="white" />
+	                      <path
+	                        d="M19.2805 26.112V30H21.5205V26.112L25.2965 18.832H22.8005L20.4165 23.936L18.0165 18.832H15.4885L19.2805 26.112ZM26.9404 27.248C26.9404 29.28 28.0764 30 29.7724 30H31.1804V28.112H30.1404C29.4364 28.112 29.1964 27.856 29.1964 27.264V22.976H31.1804V21.136H29.1964V18.944H26.9404V21.136H25.8844V22.976H26.9404V27.248Z"
+	                        fill="white"
+	                      />
+	                    </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <section class="schedule">
+      <div class="container schedule__container">
+        <div class="schedule__content">
+          <div class="schedule__left">
+            <ul class="schedule__list">
+              <li class="schedule__list-item">
+                <h3 class="schedule__item-title">Woensdag 12/01</h3>
+                <div class="schedule__item-description">
+                  <span>Salade met Serrano</span>
+
+									<div class="svg__box">
+										<svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+									</div>
+
+                  <span>Steak Tartaar</span>
+                </div>
+              </li>
+              <li class="schedule__list-item">
+                <h3 class="schedule__item-title">Donderdag 13/01</h3>
+                <div class="schedule__item-description">
+                  <span>Toast Roquefort</span>
+									<div class="svg__box">
+										<svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+									</div>
+                  <span>Penne met Kip en Prei</span>
+                </div>
+              </li>
+              <li class="schedule__list-item">
+                <h3 class="schedule__item-title">Vrijdag 14/01</h3>
+                <div class="schedule__item-description">
+                  <span>Verrassing van de Chef</span>
+									<div class="svg__box">
+										<svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+									</div>
+                  <span>Penne met Kip en Prei</span>
+                </div>
+              </li>
+              <li class="schedule__list-item">
+                <h3 class="schedule__item-title">Vrijdag 15/01</h3>
+                <div class="schedule__item-description">
+                  <span>Verrassing van de Chef</span>
+								<div class="svg__box">
+										<svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+								</div class="svg__box">
+                  <span>Penne met Kip en Prei</span>
+                </div>
+              </li>
+              <li class="schedule__list-item">
+                <h3 class="schedule__item-title">Vrijdag 16/01</h3>
+                <div class="schedule__item-description">
+                  <span>Verrassing van de Chef</span>
+								<div class="svg__box">
+										<svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+	                  <svg
+	                    width="5"
+	                    height="5"
+	                    viewBox="0 0 5 5"
+	                    fill="none"
+	                    xmlns="http://www.w3.org/2000/svg"
+	                  >
+	                    <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F" />
+	                  </svg>
+								</div>
+                  <span>Penne met Kip en Prei</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="schedule__right">
+            <img
+              class="schedule_bg-frame"
+              src="./img/schedule_bg-frame.png"
+              alt="#"
+            />
+            <img
+              class="schedule_bg-first"
+              src="./img/schedule_bg-first.jpg"
+              alt="#"
+            />
+            <img
+              class="schedule_bg-second"
+              src="./img/schedule_bg-second.jpg"
+              alt="#"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quotes">
+      <div class="container quotes__container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+							<div class="swiper__slide-content">
+								<svg class="quotes-svg" width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+									</svg>
+									<h2 class="swiper__slide-title">Goede service, lekker eten, toffe ambiance</h2>
+								<strong class="swiper__slide-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+								</strong>
+							<p class="swiper__slide-author">ALAIN HEYNDRICKX</p>
+							</div>
+						</div>
+            <div class="swiper-slide">
+							<div class="swiper__slide-content">
+							<svg class="quotes-svg" width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+								</svg>
+								<h2 class="swiper__slide-title">Goede service, lekker eten, toffe ambiance</h2>
+							<strong class="swiper__slide-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+							</strong>
+						<p class="swiper__slide-author">ALAIN HEYNDRICKX</p>
+						</div>
+					</div>
+            <div class="swiper-slide">
+							<div class="swiper__slide-content">
+								<svg class="quotes-svg" width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+									</svg>
+									<h2 class="swiper__slide-title">Goede service, lekker eten, toffe ambiance</h2>
+								<strong class="swiper__slide-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+								</strong>
+							<p class="swiper__slide-author">ALAIN HEYNDRICKX</p>
+							</div>
+						</div>
+          </div>
+
+          <div id="swiper-button-prev" class="swiper-button-prev"></div>
+          <div id="swiper-button-next" class="swiper-button-next"></div>
+
+          
+      </div>
+    </section>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup">
+						<svg
+							class="popup__cross"
+							width="25"
+							height="25"
+							viewBox="0 0 25 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle
+								opacity="1"
+								cx="12.5"
+								cy="12.4998"
+								r="12.5"
+								fill="#d3b47f"
+							/>
+							<g clip-path="url(#clip0_158_2746)">
+								<path
+									d="M7.6875 17.3123L17.3125 7.68726M17.3125 17.3123L7.6875 7.68726"
+									stroke="#ffffff"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_158_2746">
+									<rect
+										width="11"
+										height="11"
+										fill="#ffffff"
+										transform="translate(7 6.99976)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div class="popup__box">
+						<div class="popup__feedback">
+							<h3 class="feedback__title">Would you like to reserve a table?</h3>
+							<p class="feedback__text">
+								Please leave your contacts, our&nbspmanager will call you back
+							</p>
+							<form id="form_id" method="post" action="" class="feedback__hero-form">
+								<div class="feedback__name-form">
+									<p>Your name*</p>
+									<input type="text" name="name" class="feedback__name-input _name _req"/>
+								</div>
+								<div class="feedback__phone-form">
+									<p>Phone number*</p>
+									<input type="text" name="phone" class="feedback__phone-input _phone _req " required/>
+								</div>
+								<input type="button" onclick="AjaxFormRequest('result_div_id', 'form_id', 'form.php')" class="feedback__form-button popup__button" value="Request a call">
+							</form>
+							<div id="result_div_id"></div>
+						</div>
+						<img
+							class="popup__fedback-img"
+							src="./img/schedule_bg-first.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/popup.js"></script>
+    <script src="./js/script.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript">
+			//  Функция для отправки формы средствами Ajax 
+				function AjaxFormRequest(result_id,form_id,url) {
+						jQuery.ajax({
+								url:     url, //Адрес подгружаемой страницы
+								type:     "POST", //Тип запроса
+								dataType: "html", //Тип данных
+								data: jQuery("#"+form_id).serialize(), 
+								success: function(response) { //Если все нормально
+								document.getElementById(result_id).innerHTML = response;
+								document.getElementById(form_id).reset();
+						},
+						error: function(response) { //Если ошибка
+						document.getElementById(result_id).innerHTML = "Error";
+						}
+				});
+		}
+</script>
+	</div>
+  </body>
+</html>
