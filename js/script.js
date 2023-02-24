@@ -23,6 +23,33 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const mySwiper = new Swiper(".swiper__sfeerfoto", {
+  slidesPerView: 1.17,
+  centeredSlides: true,
+  spaceBetween: 10,
+  // Optional parameters
+
+  direction: "horizontal",
+  loop: true,
+  speed: 1000,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".sfeerfoto-button-next",
+    prevEl: ".sfeerfoto-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
 // burger
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
