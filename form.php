@@ -1,6 +1,8 @@
 <?php
-//Если форма была отправленна, то выводим ее содержимое на экран
-if (isset($_POST["name"])) { 
-    echo "Done"; 
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = $_POST["name"];
+    $phone = $_POST["phone"];
+
+    echo "Thank you, $name! Expect a call";
 }
 ?>

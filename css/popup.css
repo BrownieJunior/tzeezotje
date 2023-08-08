@@ -1,4 +1,4 @@
-/* ==================== Pop-up__Fedback ==================== */
+/* ==================== Pop-up ==================== */
 
 .popup {
   position: fixed;
@@ -59,7 +59,7 @@
 
 .popup__fedback-img {
   width: 330px;
-  height: 522px;
+  /* height: 522px; */
 }
 
 .feedback {
@@ -146,7 +146,7 @@ input::placeholder {
   border-radius: 4px;
 }
 #result_div_id {
-  width: 100px;
+  font-size: 11px;
   height: 10px;
   margin: 8px 0;
   font-weight: 300;
