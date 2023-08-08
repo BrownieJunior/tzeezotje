@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   z-index: 111;
@@ -59,7 +59,6 @@
 
 .popup__fedback-img {
   width: 330px;
-  /* height: 522px; */
 }
 
 .feedback {
@@ -145,9 +144,9 @@ input::placeholder {
   background-color: #fff;
   border-radius: 4px;
 }
-#result_div_id {
+.result_div_id {
+  min-height: 10px;
   font-size: 11px;
-  height: 10px;
   margin: 8px 0;
   font-weight: 300;
   color: #1f1f1f;
