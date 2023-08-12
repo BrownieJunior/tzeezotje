@@ -585,9 +585,11 @@ body.menu-open {
   color: #d3b47f;
   transition: color 0.3s ease-in-out;
 }
+
 .map__container {
   width: 1200px;
   height: 547px;
+  overflow: hidden;
 }
 /* ==================== Footer ==================== */
 .footer__container {

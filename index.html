@@ -21,7 +21,7 @@
   </head>
   <body>    
 		<div class="wrapper"> 
-    <div class="header__hero-bg">
+    <div id="header__hero" class="header__hero-bg">
       <header id="header" class="header">
         <div class="container header__container">
           <a href="#">
@@ -30,10 +30,10 @@
 					<div class="menu__burger">
 						<ul class="menu">
 							
-							<li><a class="menuItem" href="#">À la carte</a></li>
-							<li><a class="menuItem" href="#">Wijnkaart</a></li>
-							<li><a class="menuItem" href="#">Lunchmenu</a></li>
-							<li><a class="menuItem" href="#">Contact</a></li>
+							<li><a class="menuItem" href="#carte">À la carte</a></li>
+							<li><a class="menuItem" href="#wijnkaart">Wijnkaart</a></li>
+							<li><a class="menuItem" href="#lunchmenu">Lunchmenu</a></li>
+							<li><a class="menuItem" href="#contacts">Contact</a></li>
 							<ul class="social__list">
 								<li class="social__list-item">
 								<a href="#">
@@ -81,16 +81,16 @@
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__list-item">
-                <a class="header__item-link" href="#">À la carte</a>
+                <a class="header__item-link" href="#carte">À la carte</a>
               </li>
               <li class="header__list-item">
-                <a class="header__item-link" href="#">Wijnkaart</a>
+                <a class="header__item-link" href="#wijnkaart">Wijnkaart</a>
               </li>
               <li class="header__list-item">
-                <a class="header__item-link" href="#">Lunchmenu</a>
+                <a class="header__item-link" href="#lunchmenu">Lunchmenu</a>
               </li>
               <li class="header__list-item">
-                <a class="header__item-link" href="#">Contact</a>
+                <a class="header__item-link" href="#contacts">Contact</a>
               </li>
             </ul>
           </nav>
@@ -226,7 +226,7 @@
       <div class="container schedule__container">
         <div class="schedule__content">
           <div class="schedule__left">
-            <ul class="schedule__list">
+            <ul id="lunchmenu" class="schedule__list">
               <li class="schedule__list-item">
                 <h3 class="schedule__item-title">Woensdag 12/01</h3>
                 <div class="schedule__item-description">
@@ -476,7 +476,7 @@
           
       </div>
     </section>
-		<section class="bestseller">
+		<section id="wijnkaart" class="bestseller">
 			<div class="container bestseller__container">
 				<div class="bestseller__content">
 					<div class="bestseller__left">
@@ -543,7 +543,7 @@
 
 			</div>
 		</section>
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="container contacts__container">
 				<div class="contacts__info">
 					<h2 class="contacts__title">Contacts</h2>
@@ -621,12 +621,16 @@
 				</div>
 			</div>
 		</section>
-		<section class="map">
-				<div class="container map__container" id="YMapsID" ></div>
+		<section id="carte" class="map">
+			<!-- id="YMapsID" -->
+				<div class="container map__container">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5488bbf2738b814accb32f21fbe678d08c6db1b6ec904a935fb0a8c3d857e821&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+					
+				</div>
 		</section>
 		<section class="footer">
-			<div class="container footer__container">
-				<a href="#"><img src="./img/footer__logo.png" alt="#"></a>
+			<div  class="container footer__container">
+				<a href="#header__hero"><img src="./img/footer__logo.png" alt="#"></a>
 				<ul class="footer__social-list">
 					<li class="social__list-item">
 					<a href="#">
@@ -773,7 +777,7 @@
 		</div>
 		<script src="./js/popup.js"></script>
     <script src="./js/script.js"></script>
-	
+		
 	
 	</div>
   </body>
