@@ -235,7 +235,9 @@ body.lock {
 .schedule {
   padding: 80px 0 90px;
 }
-
+#lunchmenu {
+  scroll-margin-top: 140px;
+}
 .schedule__content {
   display: flex;
   justify-content: space-between;
@@ -385,6 +387,10 @@ body.menu-open {
   margin-bottom: 35px;
 }
 
+#wijnkaart {
+  scroll-margin-top: 100px;
+}
+
 .bestseller__content {
   display: flex;
   margin-bottom: 45px;
@@ -492,6 +498,9 @@ body.menu-open {
   margin-top: 400px;
   margin-bottom: 30px;
 }
+#contacts {
+  scroll-margin-top: 130px;
+}
 
 .contacts__container {
   display: flex;
@@ -590,6 +599,9 @@ body.menu-open {
   width: 1200px;
   height: 547px;
   overflow: hidden;
+}
+#carte {
+  scroll-margin-top: 130px;
 }
 /* ==================== Footer ==================== */
 .footer__container {
